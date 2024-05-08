@@ -1,0 +1,19 @@
+*{
+    background-color: rgb(233, 237, 228);
+}
+/* CSS for Navbar */
+nav {
+    background-color: #232222; /* Background color */
+    padding: 10px; /* Padding around the links */
+    text-align: center; /* Center-align the links */
+}
+
+nav a {
+    color: rgb(21, 3, 3); /* Text color */
+    text-decoration: none; /* Remove underline */
+    padding: 0 10px; /* Add padding between links */
+}
+
+nav a:hover {
+    color: #ffcc00; /* Text color on hover */
+}
