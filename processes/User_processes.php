@@ -3,25 +3,24 @@
 session_start();
 
 // Import database connection
-require_once "../config/Constants.php";
+require_once "../config/dbConnect.php";
 
 // Sign up process
-if (isset($_POST["sign-up"])) {
-    $name = mysqli_real_escape_string($dbConn, $_POST["name"]);
+if (isset($_POST["signup"])) {
+    $name = mysqli_real_escape_string($dbConn, $_POST["fullname"]);
     $email = mysqli_real_escape_string($dbConn, $_POST["email"]);
     $password = mysqli_real_escape_string($dbConn, $_POST["password"]);
-
-    
+   
     // Encrypt the password
     $hash_password = password_hash($password, PASSWORD_DEFAULT);
     
     // Insert data into table
-    $user_insert = "INSERT INTO users (name, email, password) VALUES ('$name','$email', '$hash_password')";
+    $user_insert = "INSERT INTO users (name, email, password, created, updated) VALUES ('$fullname', '$username', '$email', '$hash_password', '$created', '$updated')";
     
     // Execute the SQL query
     if ($dbConn->query($user_insert) === TRUE) {
         echo "New record created successfully";
-        header("Location: ./sign-in.php");
+        header("Location: ../sign-in.php");
         exit();
     } else {
         die("Failed to insert the new record: " . $dbConn->error);
@@ -29,11 +28,13 @@ if (isset($_POST["sign-up"])) {
 }
 
 // Sign in process
-if (isset($_POST["sign-in"])) {
+if (isset($_POST["signin"])) {
     $entered_username = mysqli_real_escape_string($dbConn, $_POST["username"]);
     $entered_password = mysqli_real_escape_string($dbConn, $_POST["password"]);
     
-   
+    // Verify if the entered username matches any record
+    $spot_username = "SELECT * FROM users WHERE username = '$entered_username' LIMIT 1";
+    
     // Execute the select query
     $uName_result = $dbConn->query($spot_username);
     
