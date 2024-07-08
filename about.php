@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <nav>
+        <a href="./">Home</a> |
+        <a href="./vision.html">Our vision</a>| 
+        <a href="./form.html">Form</a> |
+        <a href="./help.html">Help</a> |
+        <a href="./get-involved.html">Get involved</a> |
+        <a href="./contact.html">Contact us</a> 
+        <a href="./about.html">About us
+         
+        </a> 
+     </nav>
+    <link rel="stylesheet"href="./css/style.css">
+</head>
+</head>
+<body>
+    <section id="about-us">
+        <div class="title text-center">WHY CHOOSE US?</div>
+        <div class="row">
+        <div class="col-md-6 about-us">
+            <p class="about title">WHY WE ARE DIFFERENT</p>
+            <u/>
+            <li>WE BELIEVE IN DOING BUSINESS WITH HONESTY</li>
+            <li>WE DELIVER ON TIME</li>
+            <li>WE CREATE A WINNING CONTENT STRATEGY</li>
+
+        </div>    
+        </div>
+    </section>
+</body>
+</html>
