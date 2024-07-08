@@ -3,7 +3,7 @@
 session_start();
 
 // Import database connection
-require_once "../config/constant.php";
+require_once "../config/Constants.php";
 
 // Sign up process
 if (isset($_POST["sign-up"])) {
@@ -21,7 +21,7 @@ if (isset($_POST["sign-up"])) {
     // Execute the SQL query
     if ($dbConn->query($user_insert) === TRUE) {
         echo "New record created successfully";
-        header("Location: ../sign-in.php");
+        header("Location: ./sign-in.php");
         exit();
     } else {
         die("Failed to insert the new record: " . $dbConn->error);
