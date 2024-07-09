@@ -7,7 +7,7 @@ require_once "../config/dbConnect.php";
 
 // Sign up process
 if (isset($_POST["signup"])) {
-    $name = mysqli_real_escape_string($dbConn, $_POST["fullname"]);
+    $name = mysqli_real_escape_string($dbConn, $_POST["name"]);
     $email = mysqli_real_escape_string($dbConn, $_POST["email"]);
     $password = mysqli_real_escape_string($dbConn, $_POST["password"]);
    
@@ -29,11 +29,11 @@ if (isset($_POST["signup"])) {
 
 // Sign in process
 if (isset($_POST["signin"])) {
-    $entered_username = mysqli_real_escape_string($dbConn, $_POST["username"]);
+    $entered_name = mysqli_real_escape_string($dbConn, $_POST["name"]);
     $entered_password = mysqli_real_escape_string($dbConn, $_POST["password"]);
     
     // Verify if the entered username matches any record
-    $spot_username = "SELECT * FROM users WHERE username = '$entered_username' LIMIT 1";
+    $spot_username = "SELECT * FROM users WHERE name = '$entered_name' LIMIT 1";
     
     // Execute the select query
     $uName_result = $dbConn->query($spot_username);
