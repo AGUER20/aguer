@@ -6,8 +6,8 @@ session_start();
 require_once "../config/dbConnect.php";
 
 // Sign up process
-if (isset($_POST["signup"])) {
-    $name = mysqli_real_escape_string($dbConn, $_POST["name"]);
+if (isset($_POST["sign-up"])) {
+    $username = mysqli_real_escape_string($dbConn, $_POST["username"]);
     $email = mysqli_real_escape_string($dbConn, $_POST["email"]);
     $password = mysqli_real_escape_string($dbConn, $_POST["password"]);
    
@@ -15,7 +15,7 @@ if (isset($_POST["signup"])) {
     $hash_password = password_hash($password, PASSWORD_DEFAULT);
     
     // Insert data into table
-    $user_insert = "INSERT INTO users (name, email, password) VALUES ('$name', '$email', '$hash_password')";
+    $user_insert = "INSERT INTO users (username, email, password) VALUES ('$username', '$email', '$hash_password')";
     
     // Execute the SQL query
     if ($dbConn->query($user_insert) === TRUE) {

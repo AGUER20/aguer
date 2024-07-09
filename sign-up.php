@@ -9,11 +9,11 @@
 <body>
     <div class="container">
         <h1>Enter User Details</h1>
-        <form id="signupForm" action="/aguer-main/aguer-main/processes/User_processes.php" method="POST" autocomplete="off">
+        <form id="signup" action="/aguer-main/aguer-main/processes/User_processes.php" method="POST" autocomplete="off">
             <div class="form-group">
-                <label for="fullname">Name</label>
-                <input type="text" id="fullname" name="fullname" required>
-                <span id="fullnameError" class="error"></span>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <span id="nameError" class="error"></span>
             </div>
           
             <div class="form-group">

@@ -11,8 +11,8 @@
         <h1>Sign in</h1>
         <form id="signinForm" action="/aguer-main/aguer-main/processes/User_processes.php" method="POST" autocomplete="off">
             <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="username" required>
+                <label for="username">Name</label>
+                <input type="text" id="username" name="username" required>
                 <span id="usernameError" class="error"></span>
             </div>
             <div class="form-group">
