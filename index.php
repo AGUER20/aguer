@@ -24,7 +24,12 @@
                     <a href="./about.php" class="nav-link">CONTENT</a>
                 </li>
                 <li class="nav-item">
+                <li class="nav-item">
                     <a href="./contact.php" class="nav-link">Contact</a>
+                </li>
+                    <a href="./services.php" class="nav-link">Products
+                      
+                    </a>
                 </li>
             </ul>
         </div>
