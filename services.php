@@ -54,11 +54,6 @@
                 <textarea id="description" name="description" required></textarea>
                 <span id="descriptionError" class="error"></span>
             </div>
-            <div class="form-group">
-                <label for="started">Price</label>
-                <input type="text" id="started" name="started" required>
-                <span id="priceError" class="error"></span>
-            </div>
         
             <button type="submit" name="submit">Submit</button>
         </form>
