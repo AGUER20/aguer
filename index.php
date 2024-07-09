@@ -18,13 +18,13 @@
         <div class="collapse navbar-collapse" id="navmenu">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a href="#learn" class="nav-link">ABOUT US</a>
+                    <a href="./about.php" class="nav-link">ABOUT US</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#content" class="nav-link">CONTENT</a>
+                    <a href="./about.php" class="nav-link">CONTENT</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
+                    <a href="./contact.php" class="nav-link">Contact</a>
                 </li>
             </ul>
         </div>
