@@ -20,7 +20,7 @@ if (isset($_POST["sign-up"])) {
     // Execute the SQL query
     if ($dbConn->query($user_insert) === TRUE) {
         echo "New record created successfully";
-        header("Location: ../sign-in.php");
+        header("Location: /sign-in.php");
         exit();
     } else {
         die("Failed to insert the new record: " . $dbConn->error);
@@ -29,11 +29,11 @@ if (isset($_POST["sign-up"])) {
 
 // Sign in process
 if (isset($_POST["signin"])) {
-    $entered_name = mysqli_real_escape_string($dbConn, $_POST["name"]);
+    $entered_name = mysqli_real_escape_string($dbConn, $_POST["username"]);
     $entered_password = mysqli_real_escape_string($dbConn, $_POST["password"]);
     
     // Verify if the entered username matches any record
-    $spot_username = "SELECT * FROM users WHERE name = '$entered_name' LIMIT 1";
+    $spot_username = "SELECT * FROM users WHERE username = '$entered_name' LIMIT 1";
     
     // Execute the select query
     $uName_result = $dbConn->query($spot_username);
@@ -70,6 +70,6 @@ if (isset($_POST["signout"])) {
     unset($_SESSION["control"]);
     // Redirect to sign-in
     header("Location: ../sign-in.php");
-    exit();
+    exit();
 }
 ?>

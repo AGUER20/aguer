@@ -20,7 +20,7 @@
                 <input type="password" id="password" name="password" required>
                 <span id="passwordError" class="error"></span>
             </div>
-            <input type="submit" name="signin" class="btn btn-primary" value="Sign in">
+            <input type="submit" name="signin" class="btn btn-primary" value="Sign-in">
         </form>
     </div>
     <script src="scripts.js"></script>
