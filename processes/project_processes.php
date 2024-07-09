@@ -17,6 +17,6 @@ if (isset($_POST["submit"])) {
         header("Location: ../services.php"); // Redirect to a different page
     } else {
         die("Failed to insert the new project record: " . $dbConn->error);
-    }
+    }
 }
 ?>
