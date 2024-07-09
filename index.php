@@ -3,86 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MORIO NGORI KICKS </title>
-    
+    <title>MORIO NGORI KICKS</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </head>
 <body>
 <!--navbar-->
-
 <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-    <div class="container"
-    <a href="#"class="navbar-brand">Morio Ngori Kicks</a>
-
-    <button class="navbar-toggle" type="button"
-    data-bs-toggle="collapse"data-bs-target="#navmenu">
-<span class="navbar-toggler-icon"></span>
-</button>
-
-
-
-
-.collapse <div class="navbar-collapse"id="navmenu">
-<ul class="navbar-nav ms-auto">
-    <li class="nav-item">
-        <a href="#learn" class="nav-link">ABOUT US</a>
-       </li>
-       <li class="nav-item">
-        <a href="#content" class="nav-link">CONTENT</a>
-        </li>
-        <li class="nav-item">
-            <a href="#contact" class="nav-link">Contact</a>
-</li>
-
-</nav>
-<!--showcase-->
-section class="bg-dark.text-light.p-5.text-center">
-<div class="container"
-<div class="d-sm-flex">
-<div>
-    <h1>Gives You <span class="text-warning"> the Best and Quality Kicks in Town</span></h1>
-
-<p class="lead">
-we focus on giving our esteemed cutomers the best ,quality and affordable shoes ,
-your request is our command
-
-</p>
-<button class="btn btn-primary btn-lg">make your orders</button>
-
-
-</div>
-<img class="img-fluid w-60"src="img/shocase.svg"alt""/>
-
-
-<!--newslater-->
-<section class="bg-primary text-light p-5">
-<div class="container">
-    
-    <div class="d-md-flex.justify-content-between align-items-center">
-        <h3 class="mb-3 mb-md-0">sign up for our latest Kicks</h3>
+    <div class="container">
+        <a href="#" class="navbar-brand">Morio Ngori Kicks</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a href="#learn" class="nav-link">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#content" class="nav-link">CONTENT</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
     </div>
-</div>
+</nav>
 
+<!--showcase-->
+<section class="bg-dark text-light p-5 text-center">
+    <div class="container">
+        <div class="d-sm-flex">
+            <div>
+                <h1>Gives You <span class="text-warning">the Best and Quality Kicks in Town</span></h1>
+                <p class="lead">
+                    We focus on giving our esteemed customers the best, quality, and affordable shoes. Your request is our command.
+                </p>
+                <button class="btn btn-primary btn-lg">Make your orders</button>
+            </div>
+           
+        </div>
+    </div>
 </section>
 
-
-
-
-
-
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="images/images (1).jpeg" class="d-block w-60" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="images/images.jpeg" class="d-block w-60" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="images/download (2).jpeg" class="d-block w-60" alt="...">
-          </div>
+<!--newsletter-->
+<section class="bg-primary text-light p-5">
+    <div class="container">
+        <div class="d-md-flex justify-content-between align-items-center">
+            <h3 class="mb-3 mb-md-0">Sign up for our latest Kicks</h3>
         </div>
-      </div>
-</body>
-</html>
+    </div>
+</section>
+
+<!--carousel-->
+<div id="carousel

@@ -6,7 +6,7 @@ session_start();
 require_once "../config/dbConnect.php";
 
 // Sign up process
-if (isset($_POST["sign-up"])) {
+if (isset($_POST["signup"])) {
     $username = mysqli_real_escape_string($dbConn, $_POST["username"]);
     $email = mysqli_real_escape_string($dbConn, $_POST["email"]);
     $password = mysqli_real_escape_string($dbConn, $_POST["password"]);
@@ -20,7 +20,7 @@ if (isset($_POST["sign-up"])) {
     // Execute the SQL query
     if ($dbConn->query($user_insert) === TRUE) {
         echo "New record created successfully";
-        header("Location: /sign-in.php");
+        header("Location: ../sign-in.php");
         exit();
     } else {
         die("Failed to insert the new record: " . $dbConn->error);
